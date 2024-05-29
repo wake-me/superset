@@ -43,7 +43,7 @@ def test_escape_value():
     assert result == "'=value"
 
     result = csv.escape_value("|value")
-    assert result == r"'\|value"
+    assert result == r"'\\|value"
 
     result = csv.escape_value("%value")
     assert result == "'%value"
@@ -64,6 +64,7 @@ def test_df_to_escaped_csv():
         ["-10", "=cmd|' /C calc'!A0"],
         ["a", '""=b'],
         [" =a", "b"],
+        ["a", u"\x00"],
     ]
     csv_str = "\n".join([",".join(row) for row in csv_rows])
 
@@ -74,9 +75,10 @@ def test_df_to_escaped_csv():
 
     assert escaped_csv_rows == [
         ["col_a", "'=func()"],
-        ["-10", r"'=cmd\|' /C calc'!A0"],
+        ["-10", r"'=cmd\\|' /C calc'!A0"],
         ["a", "'=b"],  # pandas seems to be removing the leading ""
         ["' =a", "b"],
+        ["a", ""],
     ]
 
     df = pa.array([1, None]).to_pandas(integer_object_nulls=True).to_frame()
