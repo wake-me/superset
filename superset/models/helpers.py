@@ -1086,7 +1086,7 @@ class ExploreMixin:  # pylint: disable=too-many-public-methods
                 _("Virtual dataset query cannot consist of multiple statements")
             )
 
-        sql = script.statements[0].format(comments=False)
+        sql = script.statements[0].format()
         if not sql:
             raise QueryObjectValidationError(_("Virtual dataset query cannot be empty"))
         return sql
@@ -1104,6 +1104,11 @@ class ExploreMixin:  # pylint: disable=too-many-public-methods
         """
 
         from_sql = self.get_rendered_sql(template_processor)
+
+        # TEST this SOLUTION (?)
+        # Add a line break in case last line happens to be a comment
+        # from_sql = from_sql + '\n'
+
         parsed_query = ParsedQuery(from_sql, engine=self.db_engine_spec.engine)
         if not (
             parsed_query.is_unknown()
