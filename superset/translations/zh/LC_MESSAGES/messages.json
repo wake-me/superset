@@ -14,16 +14,16 @@
       "\n            Error: %(text)s\n            ": [""],
       " (excluded)": ["(不包含)"],
       " Set the opacity to 0 if you do not want to override the color specified in the GeoJSON": [
-        ""
+        "如果您不想覆盖 GeoJSON 中指定的颜色，请将不透明度设置为 0"
       ],
       " expression which needs to adhere to the ": [" 表达式并基于 "],
       " source code of Superset's sandboxed parser": [""],
       " standard to ensure that the lexicographical ordering\n                      coincides with the chronological ordering. If the\n                      timestamp format does not adhere to the ISO 8601 standard\n                      you will need to define an expression and type for\n                      transforming the string into a date or timestamp. Note\n                      currently time zones are not supported. If time is stored\n                      in epoch format, put `epoch_s` or `epoch_ms`. If no pattern\n                      is specified we fall back to using the optional defaults on a per\n                      database/column name level via the extra parameter.": [
         "来确保字符的表达顺序与时间顺序一致的标准。如果时间戳格式不符合 ISO 8601 标准，则需要定义表达式和类型，以便将字符串转换为日期或时间戳。注意：当前不支持时区。如果时间以epoch格式存储，请输入 `epoch_s` or `epoch_ms` 。如果没有指定任何模式，我们可以通过额外的参数在每个数据库/列名级别上使用可选的默认值。"
       ],
-      " to mark a column as a time column": [""],
-      " to open SQL Lab. From there you can save the query as a dataset.": [""],
-      " to visualize your data.": [""],
+      " to mark a column as a time column": ["将列标记为时间列"],
+      " to open SQL Lab. From there you can save the query as a dataset.": ["打开 SQL Lab。从那里您可以将查询保存为数据集。"],
+      " to visualize your data.": ["可视化您的数据。"],
       "!= (Is not equal)": ["!= (不等于)"],
       "%(dialect)s cannot be used as a data source for security reasons.": [
         "出于安全原因，%(dialect)s SQLite数据库不能用作数据源。"
@@ -56,7 +56,7 @@
       "%s aggregates(s)": ["%s 聚合"],
       "%s column(s)": ["%s 列"],
       "%s items could not be tagged because you don’t have edit permissions to all selected objects.": [
-        ""
+        "%s 无法标记项目，因为您没有对所有选定对象的编辑权限。"
       ],
       "%s operator(s)": ["%s 运算符"],
       "%s option(s)": ["%s 个选项"],
@@ -64,11 +64,11 @@
       "%s%s": ["%s%s"],
       "%s-%s of %s": ["%s-%s 总计 %s"],
       "(Removed)": ["(已删除)"],
-      "(deleted or invalid type)": [""],
+      "(deleted or invalid type)": ["已删除或类型​​无效"],
       "(no description, click to see stack trace)": [
         "无描述，单击可查看堆栈跟踪"
       ],
-      "), and they become available in your SQL (example:": [""],
+      "), and they become available in your SQL (example:": ["），并且它们在您的 SQL 中可用（例如："],
       "*%(name)s*\n\n%(description)s\n\n<%(url)s|Explore in Superset>\n\n%(table)s\n": [
         ""
       ],
@@ -80,21 +80,21 @@
       ],
       ".": [""],
       "0 Selected": ["0个被选中"],
-      "1 calendar day frequency": [""],
-      "1 day ago": [""],
+      "1 calendar day frequency": ["1 个日历日频率"],
+      "1 day ago": ["1天前"],
       "1 hour": ["1小时"],
       "1 minute": ["1分钟"],
-      "1 minutely frequency": [""],
-      "1 month end frequency": [""],
-      "1 month start frequency": [""],
-      "1 week ago": [""],
-      "1 year ago": [""],
+      "1 minutely frequency": ["1分钟频率"],
+      "1 month end frequency": ["1个月结束频率"],
+      "1 month start frequency": ["1个月开始频率"],
+      "1 week ago": ["1周前"],
+      "1 year ago": ["1年以前"],
       "10 minute": ["10分钟"],
-      "104 weeks ago": [""],
+      "104 weeks ago": ["104 周前"],
       "15 minute": ["15分钟"],
-      "156 weeks ago": [""],
+      "156 weeks ago": ["156 周前"],
       "1AS": [""],
-      "1D": [""],
+      "1D": ["1天"],
       "1H": [""],
       "1M": [""],
       "1T": [""],
